@@ -7,7 +7,6 @@ import org.mockito.Mockito._
 import org.openrdf.model.impl.LinkedHashModel
 import org.scalatest.WordSpec
 import org.scalatest.mock.MockitoSugar.mock
-import org.scalatestplus.play.PlaySpec
 import play.api.http.HeaderNames
 import play.api.libs.json.Json
 import play.api.test.Helpers._
