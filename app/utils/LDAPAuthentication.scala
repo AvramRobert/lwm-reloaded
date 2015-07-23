@@ -41,7 +41,7 @@ case class LDAPAuthentication(bindHost: String, bindPort: Int, dn: String) exten
       val bindDN = s"uid=$user, $dn"
       val bindRequest = new SimpleBindRequest(bindDN, password)
       val bindResult = connection.bind(bindRequest)
-      if (bindResult.getResultCode == ResultCode.SUCCESS) true else false
+      bindResult.getResultCode == ResultCode.SUCCESS
   }
 
 
